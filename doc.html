@@ -7,24 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <H1>Cadastro de Produtos</H1>
+        
+        <main>
+            <section id="form-section">
+                <h2>Cadastro novo Produto</h2>
+                <form action="product-form">
+
+                    <input 
+                     type="text"
+                     id="product-id"
+                     placeholder="ID do pro"
+                    />
+
+                    <input 
+                     type="text"
+                     id="product-name"
+                     placeholder="Nome do produto"
+                    />
+                    
+                    <input 
+                     type="text"number
+                     id="product-price"
+                     placeholder="Preço do produto"
+                    />
+
+                </form>
+            </section>
+
+            <section id="list-section">
+                <h2>Lista de produtos Cadastrados</h2>
+                <ul id="product-list"></ul>
+            </section>
+
+        </main>
     </header>
-    <main>
-        <section id="form-section">
-            <H2>Cadastrar novo Produto</H2>
-            <form action="product-forme">
-                <input type="text" id="produto-id" name="ID do Produto" required>
-                <input type="text" id="product-name" name="Nome do produto" required>
-                <input type="text" number id="product-price" name="Preço do produto" required>
-                <button type="submit">Cadastrar</button>
-            </form>
-        </section>
-        <section id="list-section">
-            <h2>Lista de Produtos Cadastrados</h2>
-            <ul id="product-list"></ul>
-        </section>
-    </main>
+    
     <script src="script.js"></script>
 </body>
 </html>
